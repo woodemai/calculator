@@ -13,31 +13,31 @@ const Calculator = () => {
                            disabled={false} onChange={(e) => setInputValue(e.target.value)}/>
                 </div>
                 <div className={styles.inputSection}>
-                    <div>
+                    <div className={styles.inputSectionRow}>
                         <Button onClick={() => setInputValue("")}>AC</Button>
                         <Button onClick={() => setInputValue(inputValue.trimEnd().replace(/(\\s+)?.$/, ''))}>Del</Button>
                         <Button onClick={() => setInputValue(inputValue + " + ")}>±</Button>
                         <Button onClick={() => setInputValue(inputValue + " ÷ ")}>÷</Button>
                     </div>
-                    <div>
+                    <div className={styles.inputSectionRow}>
                         <Button onClick={() => setInputValue(inputValue + "7")}>7</Button>
                         <Button onClick={() => setInputValue(inputValue + "8")}>8</Button>
                         <Button onClick={() => setInputValue(inputValue + "9")}>9</Button>
                         <Button onClick={() => setInputValue(inputValue + " × ")}>×</Button>
                     </div>
-                    <div>
+                    <div className={styles.inputSectionRow}>
                         <Button onClick={() => setInputValue(inputValue + "4")}>4</Button>
                         <Button onClick={() => setInputValue(inputValue + "5")}>5</Button>
                         <Button onClick={() => setInputValue(inputValue + "6")}>6</Button>
                         <Button onClick={() => setInputValue(inputValue + " - ")}>-</Button>
                     </div>
-                    <div>
+                    <div className={styles.inputSectionRow}>
                         <Button onClick={() => setInputValue(inputValue + "1")}>1</Button>
                         <Button onClick={() => setInputValue(inputValue + "2")}>2</Button>
                         <Button onClick={() => setInputValue(inputValue + "3")}>3</Button>
                         <Button onClick={() => setInputValue(inputValue + " + ")}>+</Button>
                     </div>
-                    <div>
+                    <div className={styles.inputSectionRow}>
                         <Button onClick={() => setInputValue(inputValue + " % ")}>%</Button>
                         <Button onClick={() => setInputValue(inputValue + "0")}>0</Button>
                         <Button onClick={() => setInputValue(inputValue + ", ")}>,</Button>

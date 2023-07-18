@@ -2,8 +2,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.inputSectionRow {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 }
 
 .textFieldSection {
@@ -37,15 +42,18 @@
 
 .calc {
     border-radius: 8px;
-    background: rgba(255,255,255,0.24);
-    height: 100%;
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     padding: 10px;
-    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    max-width: 300px;
+
 }
+
+
 .wrapper {
+    height: calc(100vh - 60px);
     display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    width: inherit;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: min(calc(100vh - 295px), 10px);
 }

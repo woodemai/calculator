@@ -10,12 +10,11 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     animation: gradient ease-in-out 25s infinite;
 }
+
 
 @keyframes gradient {
     0% {
@@ -34,7 +33,6 @@ body {
 header {
     height: 60px;
     padding: 10px;
-    margin-bottom: 60px;
     text-shadow: 4px 4px 2px rgba(0,0,0,0.2);
     color: white;
     font-weight: 800;
